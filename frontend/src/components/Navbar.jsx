@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import  { useContext, useState } from 'react'
 import {assets} from '../assets/assets'
 import { Link, NavLink } from 'react-router-dom'
 import { ShopContext } from '../context/ShopContext';
@@ -17,9 +17,9 @@ const Navbar = () => {
     }
 
   return (
-    <div className='flex items-center justify-between py-5 font-medium'>
+    <div className='flex items-center justify-between  font-medium'>
       
-      <Link to='/'><img src={assets.logo} className='w-36' alt="" /></Link>
+      <Link to='/'><img src={assets.logo} className='w-40 h-30' alt="" /></Link>
 
       <ul className='hidden sm:flex gap-5 text-sm text-gray-700'>
         
@@ -39,6 +39,14 @@ const Navbar = () => {
             <p>CONTACT</p>
             <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden' />
         </NavLink>
+        <a
+        href="https://github.com/priincce"
+        target="_blank"
+        rel="noopener noreferrer"
+        className='flex flex-col items-center gap-1'>
+            <p>ABOUT DEVELOPER</p>
+            <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden' />
+        </a>
 
       </ul>
 
